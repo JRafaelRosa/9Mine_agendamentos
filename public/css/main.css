@@ -69,3 +69,45 @@ html, body {
     color: gold !important;
     box-shadow: 0 0 .2rem rgba(255, 102, 0, 0.6) !important;
 }
+
+/*página inicial*/
+.title_bem-vindo {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    padding-bottom: .7rem; /* Espaço para a linha */
+}
+
+.line-container {
+    position: relative; /* Garante que a linha fique dentro do fluxo normal */
+    width: 100%;
+    height: .1rem; /* Define a altura da linha */
+    overflow: hidden;
+    margin-top: .2rem; /* Ajusta o espaço entre o h2 e a linha */
+}
+
+.animated-line {
+    width: 100%;
+    height: .2rem;
+    background: linear-gradient(90deg, gold, transparent);
+    animation: moveLine 2s linear infinite;
+}
+
+@keyframes moveLine {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.btn-login__index{
+    transition: width 0.3s ease;
+}
+
+.btn-login__index:hover{
+    background-color: transparent !important;
+    color: gold !important;
+    box-shadow: 0 0 .2rem rgba(255, 221, 0, 0.6) !important;
+}

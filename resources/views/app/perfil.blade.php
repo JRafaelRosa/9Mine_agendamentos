@@ -7,7 +7,6 @@
         <h2>Olá bem vindo {{ Auth::user()->nome }} </h2>
         <h3>seu perfil é de nivel {{ Auth::user()->permissao_id }}</h3>
     </div>
-
     <div>
         <form action="{{ route('site.logout') }}" method="POST">
             @csrf

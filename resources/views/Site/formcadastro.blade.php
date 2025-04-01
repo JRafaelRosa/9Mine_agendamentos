@@ -13,7 +13,7 @@
                 <ul class="list-group p-0">
                     <li class="list-group-item bg-transparent text-warning p-3 border-0">
                         <label for="nome" class="form-label">Nome Completo</label>
-                        <input type="text" id="nome" name="nome" placeholder="João da Silva" required class="login-item form-control rounded">
+                        <input type="text" id="nome" name="nome" value="{{ old('nome') }}" placeholder="João da Silva" required class="login-item form-control rounded">
                         @if($errors->has('nome'))
                             <div>
                                 <p class="text-danger text-center">{{ $errors->first('nome') }}</p>
@@ -22,7 +22,7 @@
                     </li>
                     <li class="list-group-item bg-transparent text-warning p-3 border-0">
                         <label for="cpf" class="form-label">CPF</label>
-                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required class="login-item form-control rounded">
+                        <input type="text" id="cpf" value="{{ old('cpf') }}" name="cpf" placeholder="000.000.000-00" required class="login-item form-control rounded">
                         @if($errors->has('cpf'))
                             <div>
                                 <p class="text-danger text-center">{{ $errors->first('cpf') }}</p>
@@ -31,7 +31,7 @@
                     </li>
                     <li class="list-group-item bg-transparent text-warning p-3 border-0">
                         <label for="telefone" class="form-label">Telefone</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="(42)99999-9999)" required class="login-item form-control rounded">
+                        <input type="tel" id="telefone" value="{{ old('telefone') }}" name="telefone" placeholder="(42)99999-9999" required class="login-item form-control rounded">
                         @if($errors->has('telefone'))
                             <div>
                                 <p class="text-danger text-center">{{ $errors->first('telefone') }}</p>
@@ -40,7 +40,7 @@
                     </li>
                     <li class="list-group-item bg-transparent text-warning p-3 border-0">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required class="login-item form-control rounded">
+                        <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="exemplo@email.com" required class="login-item form-control rounded">
                         @if($errors->has('email'))
                             <div>
                                 <p class="text-danger text-center">{{ $errors->first('email') }}</p>
@@ -49,7 +49,7 @@
                     </li>
                     <li class="list-group-item bg-transparent text-warning p-3 border-0">
                         <label for="data_nascimento" class="form-label">Data de nascimento</label>
-                        <input type="date" id="data_nascimento" name="data_nascimento" placeholder="01-01-2000" required class="login-item form-control rounded">
+                        <input type="date" id="data_nascimento" value="{{ old('data_nascimento') }}" name="data_nascimento" placeholder="01-01-2000" required class="login-item form-control rounded">
                         @if($errors->has('data_nascimento'))
                             <div>
                                 <p class="text-center text-danger">{{ $errors->first('data_nascimento') }}</p>
@@ -62,6 +62,15 @@
                         @if($errors->has('senha'))
                             <div>
                                 <p class="text-center text-danger">{{ $errors->first('senha') }}</p>
+                            </div>
+                        @endif
+                    </li>
+                    <li class="list-group-item bg-transparent text-warning p-3 border-0">
+                        <label for="senha_confim" class="form-label">Confirmação de senha</label>
+                        <input type="password" id="senha_confirm" name="senha_confirm" required class="login-item form-control rounded">
+                        @if($errors->has('senha_confirm'))
+                            <div>
+                                <p class="text-center text-danger">{{ $errors->first('senha_confirm') }}</p>
                             </div>
                         @endif
                     </li>
