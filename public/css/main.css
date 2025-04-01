@@ -1,0 +1,71 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.conteudo {
+    width: 90%; /* Garante que o conteúdo tenha 90% da largura */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 1rem; /* Adiciona um pouco de espaçamento interno, se necessário */
+}
+
+.nav-logo {
+    width: 8%;
+    transition: opacity 0.3s ease; /* Suaviza a transição ao passar o mouse */
+}
+
+.nav-logo:hover {
+    opacity: 0.5;
+}
+
+.nav-link {
+    position: relative; /* Para permitir a linha de baixo */
+    padding-bottom: 0.3rem; /* Dá um pequeno espaço para a borda não empurrar o conteúdo */
+    box-sizing: border-box; /* Garante que o border-bottom não aumente o tamanho total */
+}
+
+/* Criando a linha invisível inicialmente */
+.nav-link::after {
+    content: ""; /* Cria o elemento visual */
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Fica logo abaixo do texto */
+    width: 0; /* Não ocupa espaço inicialmente */
+    height: .1rem; /* Espessura da linha */
+    background-color: gold; /* Cor da linha */
+    transition: width 0.3s ease; /* Suaviza a animação da linha */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* A linha ocupa 100% da largura do item */
+}
+
+.login-item{
+    background-color: transparent !important;
+    color: gold !important;
+    border: .1rem solid gold !important;
+    transition: width 0.3s ease;
+}
+
+.login-item:focus {
+    outline: none !important;
+    border-color: #bd5503 !important; /* Cor da borda quando focado */
+    box-shadow: 0 0 .2rem rgba(255, 102, 0, 0.6) !important; /* Adiciona sombra */
+}
+
+.login-item::placeholder{
+    color: rgba(255, 215, 0, 0.64) !important;
+}
+
+.erro-login{
+    background-color: red;
+}
+.btn-enviar__form{
+    transition: width 0.3s ease;
+}
+.btn-enviar__form:hover{
+    background-color: transparent !important;
+    color: gold !important;
+    box-shadow: 0 0 .2rem rgba(255, 102, 0, 0.6) !important;
+}
