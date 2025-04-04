@@ -30,7 +30,7 @@
                     </li>
                     <li class="list-group-item bg-transparent text-warning p-3 border-0">
                         <label for="senha" class="form-label">Senha</label>
-                        <input type="password" id="senha" name="senha" required class="login-item form-control rounded">
+                        <input type="password" id="senha" name="senha" required class="login-item form-control rounded" placeholder="********" autocomplete="new-password">
                     </li>
                     <li class="list-group-item bg-transparent text-warning p-3 border-0">
                         <input value="Enviar" class="btn btn-warning w-100 mt-3 btn-enviar__form" type="submit" name="Enviar">

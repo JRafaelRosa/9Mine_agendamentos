@@ -7,6 +7,17 @@
         <h2>Olá bem vindo {{ Auth::user()->nome }} </h2>
         <h3>seu perfil é de nivel {{ Auth::user()->permissao_id }}</h3>
     </div>
+
+    <section>
+        <div>
+            <a href="{{ route('app.listarUsuarios') }}">
+                <button class="btn-login__index btn bg-warning text-black" type="button" name="listar" value="listar">
+                    Listagem de Usuários
+                </button>
+            </a>
+        </div>
+    </section>
+
     <div>
         <form action="{{ route('site.logout') }}" method="POST">
             @csrf
