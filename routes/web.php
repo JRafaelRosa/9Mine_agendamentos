@@ -9,6 +9,7 @@ use App\Http\Controllers\LojaController;
 use App\Http\Controllers\SobreNosController;
 use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\ContatoController;
+use App\Http\Controllers\ListagemUsuarioController;
 
 Route::get('/', function () {
     return view('site.index');
@@ -31,4 +32,6 @@ Route::middleware([UserMiddleware::class])->prefix('/app')->group(function () {
 
     Route::get('/logout', [LoginController::class, 'logout'])->name('site.logout');
     Route::post('/logout', [LoginController::class, 'logout'])->name('site.logout');
+
+    Route::get('listar-usuarios', [ListagemUsuarioController::class, 'viewListagemUsuario'])->name('app.listarUsuarios');
 });
