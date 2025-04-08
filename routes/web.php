@@ -10,6 +10,7 @@ use App\Http\Controllers\SobreNosController;
 use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\ContatoController;
 use App\Http\Controllers\ListagemUsuarioController;
+use App\Http\Controllers\UsuarioController;
 
 Route::get('/', function () {
     return view('site.index');
@@ -34,4 +35,10 @@ Route::middleware([UserMiddleware::class])->prefix('/app')->group(function () {
     Route::post('/logout', [LoginController::class, 'logout'])->name('site.logout');
 
     Route::get('listar-usuarios', [ListagemUsuarioController::class, 'viewListagemUsuario'])->name('app.listarUsuarios');
+
+    Route::get('/editar-usuario/{id}', [UsuarioController::class, 'editar'])->name('app.editarUsuario');
+    Route::post('/editar-usuario/{id}', [UsuarioController::class, 'atualizarPermissao'])->name('app.atualizarUsuario');
+
+    Route::get('/excluir-usuario/{id}', [UsuarioController::class, 'excluir'])->name('app.excluir');
+    Route::delete('/excluir-usuario/{id}', [UsuarioController::class, 'excluirUsuario'])->name('app.excluirUsuario');
 });

@@ -1,183 +1,66 @@
-# 9Mine_Agendamentos
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-![Laravel](https://img.shields.io/badge/Laravel-10-red?logo=laravel)
-![PHP](https://img.shields.io/badge/PHP-8.2-blue?logo=php)
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-## 📋 Descrição
+## About Laravel
 
-**9Mine_Agendamentos** é um sistema web que tem como objetivo facilitar o processo de agendamentos para comércios que trabalham com serviços por horário.  
-Com ele, os **clientes** podem agendar serviços de forma rápida e prática, enquanto os **prestadores de serviço (servidores)** têm acesso facilitado à sua agenda e um controle detalhado de seus rendimentos.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-> 🚧 Projeto em construção... 🚧
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
----
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## 🧰 Tecnologias Utilizadas
+## Learning Laravel
 
-- **Laravel** (Framework PHP)
-- **MySQL** (Banco de Dados)
-- **Bootstrap** (Estilização)
-- **Blade** (Templates do Laravel)
-- **Git & GitHub** (Controle de Versão)
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
----
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-## 📁 Estrutura do Projeto
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-```bash
-9Mine_agendamentos/
-├── app/
-│   ├── Http/
-│   │   ├── Controllers/
-│   │   │   ├── AgendaController.php
-│   │   │   ├── CadastroUserController.php
-│   │   │   ├── ContatoController.php
-│   │   │   ├── ...
-│   │   ├── Middleware/
-│   │   │   ├── PermissaoMiddleware.php
-│   │   │   ├── UserMiddleware.php
-│   │   │   ├── ...
-|   │   ├── Request/
-│   │   │   ├── CadastroRequest.php
-|   |___Models/
-|   |   |____PerfilConteudoModel.php
-|   |   |____PerfilModel.php
-|   |   |____ ...
-|   |___Rules/
-|   |   |____cpfValido.php
-├── database/
-│   ├── migrations/
-|   |   |____2025_03_28_142542_create_perfil_table.php
-|   |   |____2025_03_29_192906_create_permissao_table.php
-|   |   |____ ...
-│   ├── seeders/
-|   |   |____PermissaoSeeder.php
-|   |   |____UsuarioSeeder.php
-|   |   |____ ...
-├── resources/
-│   ├── views/
-│   │   ├── site/
-│   │   │   ├── agenda.blade.php
-│   │   │   ├── contato.blade.php
-│   │   ├── app/
-│   │   │   ├── listargem_usuarios.blade.php
-│   │   │   ├── perfil.blade.php
-│   │   ├── layouts/
-│   │   │   ├── main.blade.php
-├── routes/
-│   ├── web.php
-│   ├── console.php
-├── .env
-├── README.md
-```
+## Laravel Sponsors
 
-## ✨ Features
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### 👤 Usuário
+### Premium Partners
 
-- [x] Cadastro de usuário  
-- [x] Login  
-- [x] Permissões de perfil (Cliente, Funcionário, Administrador, Super Administrador)  
-- [ ] Confirmação de e-mail  
-- [ ] Edição de dados pessoais  
-- [ ] Preenchimento de formulário de informações  
-- [ ] Redefinição de senha  
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
-### 🙎‍♂️ Cliente
+## Contributing
 
-- [x] Visualização da agenda  
-- [ ] Realização de agendamentos  
-- [ ] Confirmação de agendamento via WhatsApp  
-- [ ] Descrição personalizada do atendimento no momento do agendamento
-- [ ] Escolha de formas de pagamento  
-- [ ] Pagamento via Pix  
-- [ ] Compra de produtos pela loja virtual  
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-### 🛠️ Servidor (Prestador de Serviço)
+## Code of Conduct
 
-- [x] Listagem de usuários  
-- [ ] Alteração de permissão de usuários  
-- [ ] Definição de horários de atendimento
-- [ ] Gerenciamento completo da agenda (criação, edição e exclusões) 
-- [ ] Definição de preços dos serviços  
-- [ ] Cadastro de produtos na loja  
-- [ ] Criação de ofertas  
-- [ ] Visualização de rendimento diário, mensal e anual  
-- [ ] Visualização do total de serviços diários  
-- [ ] Envio de mensagens automáticas via WhatsApp ou e-mail  
-- [ ] Avaliação de usuários  
-- [ ] Aceitar ou recusar agendamentos  
-- [ ] Cancelamento de agendamentos com mensagem automática para o cliente
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## ⚙️ Pré-requisitos
+## Security Vulnerabilities
 
-Antes de iniciar o projeto, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-- [PHP](https://www.php.net/downloads.php)
-- [MySQL](https://www.mysql.com/downloads/)
-- [Git](https://git-scm.com/downloads)
-- [Composer](https://getcomposer.org/download/)
-- [Node.js](https://nodejs.org/en/download)
+## License
 
-- Uma IDE de sua preferência que suporte PHP (ex: VS Code, PHPStorm, etc)
-
-
-## 🚀 Rodando a Aplicação
-
-```bash
-# Clone este repositório
-git clone https://github.com/JRafaelRosa/9Mine_agendamentos.git
-
-# Acesse o diretório do projeto
-cd 9Mine_agendamentos
-
-# Abra o projeto na sua IDE de preferência e, no terminal, execute os comandos abaixo:
-
-# Instale as dependências do PHP
-composer install
-
-# Instale as dependências do front-end
-npm install
-npm install bootstrap
-npm install bootstrap-icons
-npm run dev
-
-# Configure o Laravel
-# Copie o arquivo .env de exemplo
-cp .env.example .env
-
-# Edite o arquivo .env com as configurações do seu banco de dados
-
-# Gere a chave da aplicação
-php artisan key:generate
-
-# Rode as migrations e os seeders
-php artisan migrate --seed
-
-# Inicie o servidor de desenvolvimento
-php artisan serve
-```
-
-## Autor 
-
-
-<div align="center">
-  
-  <sub><b>João Rafael dos Santos da Rosa</b></sub>  
-  <br>
-  <a href="https://www.linkedin.com/in/joao-rafael-rosa" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn João Rafael"/>
-  </a>
-  <br>
-  Desenvolvedor e idealizador do projeto.
-</div>
-
-
-## 📄 Licença
-
-![Licença](https://img.shields.io/badge/Licença-Código%20Fechado-critical)
-
-## 🖼️ Demonstração
-
-![preview](semcaminhoainda)
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

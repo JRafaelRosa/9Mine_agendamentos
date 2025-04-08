@@ -24,10 +24,11 @@
                         <td>{{ $usuario->permissao_id }}</td>
                         <td>
                             <div class="d-flex gap-3">
-                                <a href="#">
+                                <a href="{{ route('app.editarUsuario', ['id' => $usuario->id]) }}">
                                     <i class="bi bi-pen text-warning"></i>
                                 </a>
-                                <a href="#">
+
+                                <a href="{{ route('app.excluir', ['id' => $usuario->id]) }}">
                                     <i class="bi bi-trash3 text-danger"></i>
                                 </a>
                                 <a href="#" class="text-warning">
